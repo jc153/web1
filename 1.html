@@ -3,12 +3,52 @@
 <head>
 <title>WEB1 - cissp</title>
 <meta charset="utf-8">
+<!--
 <style>
+  body{
+    margin:0;
+  }
   a {
-    color: black;
-    text-decoration: none;
+   color: black;
+   text-decoration: none;
+  }
+  h1 {
+    font-size: 45px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    margin: 0;
+    padding: 20px;
+  }
+  ol{
+    border-right: 1px solid gray;
+    width: 100px;
+    margin: 0;
+    padding: 20px;
+  }
+  #grid{
+    display:grid;
+    grid-template-columns: 150px 1fr;
+  }
+  #grid ol{
+    padding-left: 28px;
+  }
+  #grid #article{
+    padding-left: 5px;
+  }
+  @media(max-width:800px){
+    #grid{
+      display:block;
+    }
+    ol{
+      border-right: none;
+    }
+    h1 {
+      border-bottom: none;
+    }
   }
 </style>
+-->
+<link rel="stylesheet" href="style.css">
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115884838-1"></script>
 <script>
@@ -23,17 +63,20 @@
 
 <body>
   <h1><a href="index.html">Information Security Ceritifications</a></h1>
-<ol>
-  <li><a href="1.html">CISSP</a></li>
-  <li><a href="2.html">CompTIA Security+</a></li>
-  <li><a href="3.html">CEH</a></li>
-</ol>
-
-<h2>CISSP</h2>
-
-<p><a href="https://en.wikipedia.org/wiki/Certified_Information_Systems_Security_Professional" target="_blank" title="html5specification">The Certified Information Systems Security Professional (CISSP)</a> is an <strong>advanced-level</strong> certification for IT pros serious about careers in information security. Offered by the International Information Systems Security Certification Consortium, known as (ISC)2 and pronounced "ISC squared," this vendor-neutral credential is recognized worldwide for its standards of excellence.</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6hJfWGo0V1M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-<p style="margin-top:30px;">CISSP credential holders are decision-makers who possess expert knowledge and technical skills necessary to develop, guide and then manage security standards, policies and procedures within their organizations. The CISSP continues to be highly sought after by IT professionals and well recognized by IT organizations. It is a regular fixture on most-wanted and must-have security certification surveys.CISSP is designed for experienced security professionals. </p>A minimum of five years of experience in at least two of (ISC)2's eight Common Body of Knowledge (CBK) domains, or four years of experience in at least two of (ISC)2's CBK domains and a college degree or an approved credential, is required for this certification. The CBK domains are Security and Risk Management, Asset Security, Security Engineering, Communications and Network Security, Identity and Access Management, Security Assessment and Testing, Security Operations, and Software Development Security.
+<div id="grid">
+  <ol>
+    <li><a href="1.html">CISSP</a></li>
+    <li><a href="2.html">CompTIA Security+</a></li>
+    <li><a href="3.html">CEH</a></li>
+  </ol>
+  <div id="article">
+    <h2>CISSP</h2>
+    <p><a href="https://en.wikipedia.org/wiki/Certified_Information_Systems_Security_Professional" target="_blank" title="html5specification">The Certified Information Systems Security Professional (CISSP)</a> is an <strong>advanced-level</strong> certification for IT pros serious about careers in information security. Offered by the International Information Systems Security Certification Consortium, known as (ISC)2 and pronounced "ISC squared," this vendor-neutral credential is recognized worldwide for its standards of excellence.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/6hJfWGo0V1M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <p style="margin-top:30px;">CISSP credential holders are decision-makers who possess expert knowledge and technical skills necessary to develop, guide and then manage security standards, policies and procedures within their organizations. The CISSP continues to be highly sought after by IT professionals and well recognized by IT organizations. It is a regular fixture on most-wanted and must-have security certification surveys.CISSP is designed for experienced security professionals. </p>A minimum of five years of experience in at least two of (ISC)2's eight Common Body of Knowledge (CBK) domains, or four years of experience in at least two of (ISC)2's CBK domains and a college degree or an approved credential, is required for this certification. The CBK domains are Security and Risk Management, Asset Security, Security Engineering, Communications and Network Security, Identity and Access Management, Security Assessment and Testing, Security Operations, and Software Development Security.
+    </p>
+  </div>
+</div>
 <p>
   <div id="disqus_thread"></div>
 <script>
